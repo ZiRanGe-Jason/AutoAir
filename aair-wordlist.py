@@ -8,8 +8,9 @@ if __name__ == "__main__":
 2.显示所有字典
 3.设置默认密码字典
 4.安装wpa-dictionary字典
-5.清空字典
-6.返回
+5.安装kali的rockyou字典
+6.清空字典
+7.返回
             ''')
         
         try:
@@ -40,10 +41,14 @@ if __name__ == "__main__":
                         os.system("rm -r wpa-dictionary/")
                         print("wpa-dictionary安装完成")
             elif(ret1==5):
+                os.system("sh aair-down-rockyou.sh")
+                os.system("gzip -d rockyou.txt.gz")
+                os.system("mv rockyou.txt wordlists/")
+            elif(ret1==6):
                 ret1=input("注意，将删除所有的密码字典，是否继续?[y/n]")
                 if(ret1=="y"):
                     os.system("rm -r wordlists/*")
-            elif(ret1==6):
+            elif(ret1==7):
                 exit()
 
     

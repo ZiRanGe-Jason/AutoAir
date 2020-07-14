@@ -1,0 +1,1 @@
+wget -O rockyou.txt.gz "http://u584.148-ctc-dd.tv002.com/down/783eb161d7e9b18291214401b251288c/rockyou.txt.gz?cts=dx-f-U21530584&ctp=125A80A228A249&ctt=1594724575&limit=2&spd=850000&ctk=783eb161d7e9b18291214401b251288c&chk=df14f2ec4d707f8b1b7231b3f99fe03a-53357341&mtd=1"
